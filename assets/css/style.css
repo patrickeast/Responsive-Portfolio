@@ -11,6 +11,7 @@ body {
 }
 
 header {
+    position: static;
     background-color: #ffffff;
     border-bottom: 1px solid #cccccc;
     margin-bottom: 20px;
@@ -67,7 +68,7 @@ p {
 }
 
 section {
-    width: 960px;
+    width: 100%;
 }
 
 /* Header Nav */
@@ -75,7 +76,8 @@ nav {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 14px;
     float: right;
-    margin-right: -60px;
+    left: 0;
+    margin: 10px 16% 0 0;
 }
 
 nav a {
@@ -93,14 +95,14 @@ nav a:hover {
 .maincontent {
     background-color: #ffffff;
     float: left;
-    width: 650px;
+    width: 50%;
     padding: 20px;
-    margin: 0 20px 0 60px;
+    margin: 0 20px 100px 60px;
 }
 
 #bio-image {
     float: left;
-    width: 20%;
+    width: 33.333%;
     overflow: auto;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -111,7 +113,7 @@ nav a:hover {
 .social {
     background-color: #ffffff;
     float: left;
-    width: 270px;
+    width: 25%;
     height: 200px;
     text-align: center;
     padding: 20px;
@@ -142,8 +144,7 @@ footer {
 
 #portfolio {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    width: 610px;
-    height: 850px;
+    width: 100%;
 }
 
 #portfolio a:hover {
@@ -155,8 +156,12 @@ footer {
     position: relative;
     margin: auto;
     overflow: auto;
-    width: 290px;
+    width: 100%;
     padding-bottom: 20px;
+}
+
+#hangman img {
+    width: 100%;
 }
 
 #hangman a {
@@ -165,7 +170,7 @@ footer {
     padding: 20px;
     background-color: #4aaaa5;
     color: #ffffff;
-    width: 290px;
+    width: 100%;
     text-align: center;
 }
 
@@ -174,8 +179,12 @@ footer {
     position: relative;
     margin: auto;
     overflow: auto;
-    width: 290px;
+    width: 100%;
     padding-bottom: 20px;
+}
+
+#trivia img {
+    width: 100%;
 }
 
 #trivia a {
@@ -184,18 +193,21 @@ footer {
     padding: 20px;
     background-color: #4aaaa5;
     color: #ffffff;
-    width: 290px;
+    width: 100%;
     text-align: center;
 }
-
 
 #rock {
     float: left;
     position: relative;
     margin: auto;
     overflow: auto;
-    width: 290px;
+    width: 100%;
     padding-bottom: 20px;
+}
+
+#rock img {
+    width: 100%;
 }
 
 #rock a {
@@ -204,7 +216,7 @@ footer {
     padding: 20px;
     background-color: #4aaaa5;
     color: #ffffff;
-    width: 290px;
+    width: 100%;
     text-align: center;
 }
 
@@ -213,8 +225,12 @@ footer {
     position: relative;
     margin: auto;
     overflow: auto;
-    width: 290px;
+    width: 100%;
     padding-bottom: 20px;
+}
+
+#rpg img {
+    width: 100%;
 }
 
 #rpg a {
@@ -223,7 +239,7 @@ footer {
     padding: 20px;
     background-color: #4aaaa5;
     color: #ffffff;
-    width: 290px;
+    width: 100%;
     text-align: center;
 }
 
@@ -232,8 +248,12 @@ footer {
     position: relative;
     margin: auto;
     overflow: auto;
-    width: 290px;
+    width: 100%;
     padding-bottom: 20px;
+}
+
+#rutgers img {
+    width: 100%;
 }
 
 #rutgers a {
@@ -242,7 +262,7 @@ footer {
     padding: 20px;
     background-color: #4aaaa5;
     color: #ffffff;
-    width: 290px;
+    width: 100%;
     text-align: center;
 }
 
@@ -251,8 +271,7 @@ footer {
 form {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
-    width: 600px;
-    height: 600px;
+    width: 75%px;
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
@@ -303,4 +322,549 @@ label {
 
 #submit:hover {
     background-color: #007F79;
+}
+
+@media screen and (max-width: 980px) {
+    body {
+        width: 100%;
+        position: absolute;
+        padding: 20px;
+    }
+    /* Navigation area */
+    
+    header {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 73px;
+        margin-bottom: 60px;
+    }
+
+    nav {
+        float: right;
+        margin: 0;
+        padding: 10px 0 0 0;
+    }
+
+    /* Text Tags */
+    h1 {
+        position: absolute;
+        margin: 0 auto;
+        top: 0;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    /* Containers */
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .maincontent {
+        width: 100%;
+        margin: 100px 0 20px 0;
+    }
+
+    .social {
+        width: 100%;
+        margin: 10px 0 60px 0;
+        height: 100%;
+    }
+
+    .portfolio {
+        width: 100%;
+    }
+
+    /* Images */
+    .social img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #bio-image {
+        width: 33.333%;
+    }
+
+    #hangman {
+        position: relative;
+        float: left;
+        width: 45%;
+        overflow: auto;
+        margin: 0 auto;
+    }
+
+    #hangman img {
+        width: 100%;
+    }
+
+    #hangman a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #trivia {
+        width: 45%;
+    }
+
+    #trivia img {
+        width: 100%;
+    }
+    
+    #trivia a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #rutgers {
+        width: 45%;
+    }
+
+    #rutgers img {
+        width: 100%;
+    }
+    
+    #rutgers a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #rpg {
+        width: 45%;
+    }
+    
+    #rpg img {
+        width: 100%;
+        
+    }
+    #rpg a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #rock {
+        width: 45%;
+    }
+
+    #rock img {
+        width: 100%;
+    }
+    
+    #rock a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    /* Footer Area */
+    footer {
+        width: 100%;
+        margin: 0 auto;
+        border-top: 5px solid #4aaaa5;
+        color: #ffffff;
+        font-size: 8px;
+        padding: 20px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    /* Contact Form */
+    form {
+        width: 100%;
+        height: 600px;
+        padding-bottom: 0;
+        margin-bottom: -140px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        position: absolute;
+        padding: 20px;
+    }
+    /* Navigation area */
+    
+    header {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 73px;
+        margin-bottom: 60px;
+    }
+
+    nav {
+        float: right;
+        margin: 0;
+        padding: 10px 0 0 0;
+    }
+
+    /* Text Tags */
+    h1 {
+        position: absolute;
+        margin: 0 auto;
+        top: 0;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    /* Containers */
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .maincontent {
+        width: 100%;
+        margin: 100px 0 20px 0;
+    }
+
+    .social {
+        width: 100%;
+        margin: 10px 0 60px 0;
+        height: 100%;
+    }
+
+    .portfolio {
+        width: 100%;
+    }
+
+    /* Images */
+    .social img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #bio-image {
+        width: 33.333%;
+    }
+
+    #hangman {
+        position: relative;
+        float: left;
+        width: 45%;
+        overflow: auto;
+        margin: 0 auto;
+    }
+
+    #hangman img {
+        width: 100%;
+    }
+
+    #hangman a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #trivia {
+        width: 45%;
+    }
+
+    #trivia img {
+        width: 100%;
+    }
+    
+    #trivia a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #rutgers {
+        width: 45%;
+    }
+
+    #rutgers img {
+        width: 100%;
+    }
+    
+    #rutgers a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #rpg {
+        width: 45%;
+    }
+    
+    #rpg img {
+        width: 100%;
+        
+    }
+    #rpg a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #rock {
+        width: 45%;
+    }
+
+    #rock img {
+        width: 100%;
+    }
+    
+    #rock a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    /* Footer Area */
+    footer {
+        width: 100%;
+        margin: 0 auto;
+        border-top: 5px solid #4aaaa5;
+        color: #ffffff;
+        font-size: 8px;
+        padding: 20px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    /* Contact Form */
+    form {
+        width: 100%;
+        padding-bottom: 0;
+        margin-bottom: -140px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        width: 100%;
+        position: absolute;
+        padding: 20px;
+    }
+    /* Navigation area */
+    
+    header {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 80px;
+    }
+
+    nav {
+        position: absolute;
+        top: 55px;
+        padding: 10px 10%;
+        padding-bottom: 60px;
+        font-size: 12px;
+        text-align: center;
+        float: left;
+        text-align: left;
+    }
+
+    /* Text Tags */
+    h1 {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        position: absolute;
+        top: 0;
+        left: 0;    
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    /* Containers */
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .maincontent {
+        width: 100%;
+        margin: 100px 0 20px 0;
+    }
+
+    .social {
+        width: 100%;
+        margin: 10px 0 60px 0;
+        height: 100%;
+    }
+
+    .portfolio {
+        width: 100%;
+    }
+
+    /* Images */
+    .social img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #bio-image {
+        width: 100%;
+    }
+
+    #hangman {
+        position: relative;
+        float: left;
+        width: 100%;
+        overflow: auto;
+        margin: 0 auto;
+    }
+
+    #hangman img {
+        width: 100%;
+    }
+
+    #hangman a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #trivia {
+        width: 100%;
+    }
+
+    #trivia img {
+        width: 100%;
+    }
+    
+    #trivia a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #rutgers {
+        width: 100%;
+    }
+
+    #rutgers img {
+        width: 100%;
+    }
+    
+    #rutgers a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #rpg {
+        width: 100%;
+    }
+    
+    #rpg img {
+        width: 100%;
+    }
+    #rpg a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    #rock {
+        width: 100%;
+    }
+
+    #rock img {
+        width: 100%;
+    }
+    
+    #rock a {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    /* Footer Area */
+    footer {
+        width: 100%;
+        margin: 0 auto;
+        border-top: 5px solid #4aaaa5;
+        color: #ffffff;
+        font-size: 8px;
+        padding: 20px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    /* Contact Form */
+    form {
+        width: 100%;
+        padding-bottom: 0;
+        margin-bottom: -140px;
+    }
 }
